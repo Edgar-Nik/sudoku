@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+html,
+body{
+	
+	height: 100%;
+	width: 100%;  
+	box-sizing: border-box;
+}
+.game_wrapper{
+
+	
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main{
+width: 600px;
+height: 600px;
+display: flex;
+flex-direction: column;
+}
+.row{
+	display: flex;
+	width: 600px;
+	height: 200px;
+}
+.input_wrapper{
+	height: 200px;
+	width: 200px;
+    flex-wrap: wrap;
+    display: flex;
+}
+input{
+	text-align: center;
+	font-size: 28px;
+	margin: 10px;
+	display: block;
+	height: 40px;
+	width: 40px;
+	outline: none;
+	border-radius: 2px solid #2F2E2E;
+	z-index: 5;
+}
+.borders{
+	border-top: 2px solid #656565;
+	border-bottom: 2px solid #656565;
+}
+.borders_column{
+	z-index: 2;
+	align-self: center;
+	position: absolute;
+    width: 200px;
+	height: 600px;
+	border-left: 2px solid #656565;
+	border-right: 2px solid #656565;
+}
+.button-wrapper{
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	position: absolute;
+}
+.check_button{
+	outline: none;	
+	border-radius: 3px;	
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	background: #49D70B;
+	color: #FFFFFF;	
+	border-style: none;
+	cursor: pointer;
+	
+}
+.check_button:hover{
+	background: #38A00A;
+	color: #D1D1D1;
+}
+.reset_button{
+	outline: none;	
+	border-radius: 3px;	
+	width: 60px;
+	height: 60px;
+	font-size: 20px;
+	background: #FF0606;
+	color: #FFFFFF;	
+	border-style: none;
+	cursor: pointer;
+}
+.reset_button:hover{
+	background: #C10707;
+	color: #C2C2C2;	
+}
+.win_case{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #6BD50C;
+	z-index: 10;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	transition: 0.5s;
+	flex-direction: column;
+	top: -100%;
+}
+.congrats_text{
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #FFFFFF;
+	z-index: 15;
+	margin-bottom: 80px;
+}
+.play_again{
+	cursor: pointer;
+	vertical-align: middle;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background: #FF0909;
+	color: #FFFFFF;
+	z-index: 15;
+	font-size: 1.2em;
+}
+.x_symbol{
+	color: #FF0000;
+	font-size: 500px;
+	z-index: 20;
+}
+.wrong_solution{
+	position: absolute;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	transition: 0.5s;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	
+}

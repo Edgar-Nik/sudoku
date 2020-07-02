@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sudoku</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="win_case">
+		<div class="congrats_text">congratulations you won !!!</div>
+		<div class="play_again">Play Again</div>
+	</div>
+
+<div class="wrong_solution">
+	<div class="x_symbol">✖</div>
+</div>
+
+	<div class="game_wrapper">
+	<div class="main">
+		<div class="borders_column"></div>
+		<div class="row">
+			<div class="input_wrapper">
+				<input id='inid1' type="text" maxlength="1">
+				<input id='inid2' type="text" maxlength="1">
+				<input id='inid3' type="text" maxlength="1">
+				<input id='inid10'  type="text" maxlength="1">
+				<input id='inid11'  type="text" maxlength="1">
+				<input id='inid12'  type="text" maxlength="1">
+				<input id='inid19'  type="text" maxlength="1">
+				<input id='inid20'  type="text" maxlength="1">
+				<input id='inid21'  type="text" maxlength="1">
+			</div>
+			<div class="input_wrapper">
+				<input id='inid4' type="text" maxlength="1">
+				<input id='inid5' type="text" maxlength="1">
+				<input id='inid6' type="text" maxlength="1">
+				<input id='inid13'  type="text" maxlength="1">
+				<input id='inid14'  type="text" maxlength="1">
+				<input id='inid15'  type="text" maxlength="1">
+				<input id='inid22'  type="text" maxlength="1">
+				<input id='inid23'  type="text" maxlength="1">
+				<input id='inid24'  type="text" maxlength="1">
+			</div>
+			<div class="input_wrapper">
+				<input id='inid7' type="text" maxlength="1">
+				<input id='inid8' type="text" maxlength="1">
+				<input id='inid9' type="text" maxlength="1">
+				<input id='inid16'  type="text" maxlength="1">
+				<input id='inid17'  type="text" maxlength="1">
+				<input id='inid18'  type="text" maxlength="1">
+				<input id='inid25'  type="text" maxlength="1">
+				<input id='inid26'  type="text" maxlength='1'>
+				<input id='inid27'  type="text" maxlength='1'>
+			</div>
+		</div>
+		<div class="row borders">
+			<div class="input_wrapper">
+				<input id='inid28'  type="text" maxlength='1'>
+				<input id='inid29'  type="text" maxlength='1'>
+				<input id='inid30'  type="text" maxlength='1'>
+				<input id='inid37'  type="text" maxlength='1'>
+				<input id='inid38'  type="text" maxlength='1'>
+				<input id='inid39'  type="text" maxlength='1'>
+				<input id='inid46'  type="text" maxlength='1'>
+				<input id='inid47'  type="text" maxlength='1'>
+				<input id='inid48'  type="text" maxlength='1'>
+			</div>
+			<div class="input_wrapper">
+				<input id='inid31'  type="text" maxlength='1'>
+				<input id='inid32'  type="text" maxlength='1'>
+				<input id='inid33'  type="text" maxlength='1'>
+				<input id='inid40'  type="text" maxlength='1'>
+				<input id='inid41'  type="text" maxlength='1'>
+				<input id='inid42'  type="text" maxlength='1'>
+				<input id='inid49'  type="text" maxlength='1'>
+				<input id='inid50'  type="text" maxlength='1'>
+				<input id='inid51'  type="text" maxlength='1'>
+				
+			</div>
+			<div class="input_wrapper">
+				<input id='inid34'  type="text" maxlength='1'>
+				<input id='inid35'  type="text" maxlength='1'>
+				<input id='inid36'  type="text" maxlength='1'>
+				<input id='inid43'  type="text" maxlength='1'>
+				<input id='inid44'  type="text" maxlength='1'>
+				<input id='inid45'  type="text" maxlength='1'>
+				<input id='inid52'  type="text" maxlength='1'>
+				<input id='inid53'  type="text" maxlength='1'>
+				<input id='inid54'  type="text" maxlength='1'>
+			</div>
+	    </div>
+	    <div class="row">
+			<div class="input_wrapper">
+				<input id='inid55'  type="text" maxlength='1'>
+				<input id='inid56'  type="text" maxlength='1'>
+				<input id='inid57'  type="text" maxlength='1'>
+				<input id='inid64'  type="text" maxlength='1'>
+				<input id='inid65'  type="text" maxlength='1'>
+				<input id='inid66'  type="text" maxlength='1'>
+				<input id='inid73'  type="text" maxlength='1'>
+				<input id='inid74'  type="text" maxlength='1'>
+				<input id='inid75'  type="text" maxlength='1'>
+			</div>
+			<div class="input_wrapper">
+				<input id='inid58'  type="text" maxlength='1'>
+				<input id='inid59'  type="text" maxlength='1'>
+				<input id='inid60'  type="text" maxlength='1'>
+				<input id='inid67'  type="text" maxlength='1'>
+				<input id='inid68'  type="text" maxlength='1'>
+				<input id='inid69'  type="text" maxlength='1'>
+				<input id='inid76'  type="text" maxlength='1'>
+				<input id='inid77'  type="text" maxlength='1'>
+				<input id='inid78'  type="text" maxlength='1'>
+			</div>
+			<div class="input_wrapper">
+				<input id='inid61'  type="text" maxlength='1'>
+				<input id='inid62'  type="text" maxlength='1'>
+				<input id='inid63'  type="text" maxlength='1'>
+				<input id='inid70'  type="text" maxlength='1'>
+				<input id='inid71'  type="text" maxlength='1'>
+				<input id='inid72'  type="text" maxlength='1'>
+				<input id='inid79'  type="text" maxlength='1'>
+				<input id='inid80'  type="text" maxlength='1'>
+				<input id='inid81'  type="text" maxlength='1'>
+			</div>
+		</div>
+	</div>
+	<div class="button-wrapper">
+	<button class="reset_button">Reset</button>
+	<button class="check_button">✔</button></div>
+	
+
+</div>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
